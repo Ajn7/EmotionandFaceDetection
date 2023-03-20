@@ -2,10 +2,10 @@ import cv2
 import os
 
 # Set the ID of the person you want to recognize
-person_id = 1
+person_id = 2
 
 # Set the path to the directory where you want to save the images
-save_path = f'dataset/arjun_{person_id}'
+save_path = f'dataset/_{person_id}'
 
 # Create the directory if it doesn't exist
 if not os.path.exists(save_path):
@@ -37,7 +37,7 @@ while count < 10:
         face_roi = gray[y:y+h, x:x+w]
 
         # Save the face image with a unique filename
-        filename = f'arjun_{person_id}_{count}.jpg'
+        filename = f'akash_{person_id}_{count}.jpg'
         file_path = os.path.join(save_path, filename)
         cv2.imwrite(file_path, face_roi)
 
