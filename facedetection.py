@@ -38,6 +38,9 @@ while True:
             elif person_id == 2:
                 recognized_name = f'akash'
                 cv2.putText(frame, recognized_name, (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2, cv2.LINE_AA)
+            elif person_id == 3:
+                recognized_name = f'Shana'
+                cv2.putText(frame, recognized_name, (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2, cv2.LINE_AA)
             else:
                 recognized_name = 'Unknown face'
                 cv2.putText(frame, recognized_name, (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2, cv2.LINE_AA)
